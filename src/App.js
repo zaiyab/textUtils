@@ -4,7 +4,7 @@ import Textbox from "./Components/Textbox"
 import About from "./Components/About"
 import Alert from "./Components/Alert";
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 
 function App() {
   const [mode,setMode]= useState('dark');
@@ -37,22 +37,14 @@ function App() {
 
 
 
-<BrowserRouter>
-
 <Navbar title="TextUtils" about="About us" mode={mode} toggleMode={toggleMode}/>
 <Alert Alert={alert}/>
 <div className="container my-3 ">
-    <Routes>
-          <Route path="/" element={   <Textbox Alert={showAlert} h1="Enter your text here"   />}/>
   
-          <Route  path="/about" element = { <About />}/>
-      
-    
-        </Routes>
- </div>
-   </BrowserRouter>
+    <Textbox Alert={showAlert} h1="Enter your text here"  />
+  
 
-
+</div>
 </>
   );
 }
