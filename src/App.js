@@ -37,7 +37,7 @@ function App() {
 
 
 
-<Navbar title="TextUtils" about="About us" mode={mode} toggleMode={toggleMode}/>
+<Navbar title="KnapSack algorithm" about="About us" mode={mode} toggleMode={toggleMode}/>
 <Alert Alert={alert}/>
 <div className="container my-3 ">
   
